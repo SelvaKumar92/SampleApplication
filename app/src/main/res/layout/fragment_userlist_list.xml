@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:name="com.tvs.sample.fragments.UserListFragment"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5">
+
+    <android.support.v7.widget.SearchView android:layout_width="match_parent"
+                                          android:id="@+id/search_view"
+                                          android:layout_margin="16dp"
+                                          android:background="@drawable/search_bg"
+                                          app:queryHint="Search"
+                                          android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:name="com.tvs.sample.fragments.UserListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/search_view"
+            android:layout_marginRight="16dp"
+            android:background="#F5F5F5"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".fragments.SAUserListFragment"
+            tools:listitem="@layout/fragment_userlist"/>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/material_design_android_floating_action_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            app:menu_animationDelayPerItem="55"
+            app:menu_backgroundColor="@android:color/transparent"
+            app:menu_colorNormal="@color/end"
+            app:menu_colorPressed="@color/end"
+            app:menu_colorRipple="#99d4d4d4"
+            app:menu_fab_label=""
+            app:menu_fab_size="normal"
+            app:menu_icon="@drawable/fab_add"
+            app:menu_labels_colorNormal="#333"
+            app:menu_labels_colorPressed="#444"
+            app:menu_labels_colorRipple="#66efecec"
+            app:menu_labels_cornerRadius="3dp"
+            app:menu_showShadow="true">
+
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/bar_chart_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@android:color/transparent"
+                app:fab_colorPressed="@color/end"
+                app:fab_label="Bar Chart"
+                app:fab_size="mini"/>
+
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/bubble_chart_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@android:color/transparent"
+                app:fab_colorPressed="@color/end"
+                app:fab_label="Bubble Chart"
+                app:fab_size="mini"/>
+
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/logout_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@android:color/transparent"
+                app:fab_colorPressed="@color/end"
+                app:fab_label="Logout"
+                app:fab_size="mini"/>
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

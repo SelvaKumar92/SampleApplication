@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2159a3</color>
+    <color name="colorPrimaryDark">#009de0</color>
+    <color name="colorPrimaryD">#792159A3</color>
+    <color name="colorAccent">#2159a3</color>
+    <color name="start">#2159a3</color>
+
+    <color name="end">#009de0</color>
+    <color name="grey">#F5F2F2</color>
+    <color name="not_selected">#8AB9DC</color>
+    <color name="stamp">#DAA520</color>
+
+</resources>

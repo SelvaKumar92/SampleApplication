@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:fillViewport="true">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+
+        <com.github.mikephil.charting.charts.BubbleChart
+                android:id="@+id/bubble_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        <com.github.mikephil.charting.charts.BarChart
+
+                android:layout_marginTop="20dp"
+                android:id="@+id/bar_chart"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+</ScrollView>
